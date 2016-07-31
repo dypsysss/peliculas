@@ -1,2 +1,2 @@
 # peliculas
-componente de peliculas para joomla 3
+Componente de peliculas para joomla 3.x

@@ -1,0 +1,208 @@
+
+.peliculas_grid_item {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+    transition: all 0.3s ease-out 0s;
+    display: block;
+    overflow: hidden;
+
+    .title {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 1.1em;
+        line-height: 24px;
+    }
+
+    .image_content {
+        float: left;
+        width: 33%;
+        padding: 1%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .grid_content {
+        position: relative;
+        display: block;
+        overflow: hidden;
+
+        .info {
+            float: left;
+            position: relative;
+            width: 60%;
+        }
+
+        .horarios {
+            font-size: 11px;
+        }
+
+        hr {
+            margin: 5px 0;
+        }
+
+        .readmore {
+            position: absolute;
+            bottom: 0px;
+            left: 35%;
+            width: 65%;
+        }
+    }
+}
+
+.filters .filtergroup {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.filters label {
+    padding-top: 3px;
+    padding-right: 5px;
+    text-align: right;
+    width: auto;
+    float: left;
+}
+
+.movie_details {
+    .moviefitxa {
+        color: #ff0000;
+    }
+
+    .form-horizontal {
+        .control-group {
+            margin-bottom: 0px;
+        }
+
+        .control-label {
+            width: @detailslabelWidth;
+            text-align: left;
+            label {
+                font-weight: bold;
+            }
+        }
+
+        .controls {
+            margin-top: 5px;
+            margin-left: @detailslabelWidth;
+            text-align: left;
+        }
+    }
+
+    .form-vertical {
+        .control-label {
+            text-align: left;
+            label {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.peliculas_block {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: @blockContentBackground;
+    border: 1px solid @blockBorderColor;
+    .border-radius(3px);
+
+    .peliculas_block_header {
+        background-color: @blockHeaderBackground;
+        border-bottom: 1px solid @blockBorderColor;
+        line-height: 16px;
+        padding: 10px;
+        .peliculas_header {
+            color: #4b4f56;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+    .peliculas_block_content {
+        display: block;
+        overflow: hidden;
+        background-color: @blockContentBackground;
+
+        .texto {
+            padding: 8px 12px;
+            line-height: 16px;
+            font-size: 12px;
+        }
+        .peliculas_grid_item {
+            box-shadow: none;
+            margin-bottom: 10px;
+            display: block;
+            overflow: hidden;
+            .readmore {
+                display: none;
+            }
+        }
+    }
+}
+
+#peliculas_carousel_thumbnail {
+    .carousel-control {
+        background: none;
+        border: none;
+        .border-radius(0px);
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        width: 28px;
+        height: 44px;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+
+    .carousel-control.left {
+        left: 0;
+        background: url(../images/carousel/prev.png) left top no-repeat;
+    }
+
+    .carousel-control.right {
+        right: 0;
+        background: url(../images/carousel/next.png) left top no-repeat;
+    }
+}
+
+.peliculasfeatured, .peliculasupcoming {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+
+    .column {
+        display: block;
+        overflow: hidden;
+        float: left;
+
+        .img-responsive {
+            width: 98%;
+            margin: 1%;
+        }
+    }
+
+    ul {
+        margin: 10px 0;
+        display: block;
+        overflow: hidden;
+        clear: both;
+        list-style: outside none none;
+
+        li {
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            &:first-child {
+                border-top: 1px solid #e5e5e5;
+                margin-top: 5px;
+                padding-top: 5px;
+            }
+        }
+    }
+}

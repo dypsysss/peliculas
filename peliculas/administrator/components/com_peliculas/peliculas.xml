@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+    <name>com_peliculas</name>
+    <author>Carles Serrats</author>
+    <creationDate>10 May 2016</creationDate>
+    <copyright>Copyright (C) 2005 - 2015 Carles Serrats. All rights reserved.</copyright>
+    <license>Comercial License.</license>
+    <authorEmail>carles@serrats.cat</authorEmail>
+    <authorUrl>www.serrats.cat</authorUrl>
+    <version>1.0</version>
+    <description>COM_PELICULAS_XML_DESCRIPTION</description>
+
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.sql</file>
+            <file driver="mysqli" charset="utf8">sql/install.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+            <file driver="mysqli" charset="utf8">sql/uninstall.sql</file>
+        </sql>
+    </uninstall>
+
+    <languages folder="site/language">
+        <language tag="en-GB">en-GB/en-GB.com_peliculas.ini</language>
+        <language tag="es-ES">es-ES/es-ES.com_peliculas.ini</language>
+        <language tag="ca-ES">ca-ES/ca-ES.com_peliculas.ini</language>
+    </languages>
+
+    <!-- Media files -->
+    <media folder="media/com_peliculas" destination="com_peliculas" >
+        <filename>index.html</filename>
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+    </media>
+
+    <administration>
+        <menu img="../media/com_peliculas/images/icon-peliculas.png">COM_PELICULAS</menu>
+
+        <files folder="administrator/components/com_peliculas">
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>sql</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>peliculas.php</filename>
+            <filename>index.html</filename>
+        </files>
+
+        <languages folder="administrator/language">
+            <language tag="en-GB">en-GB/en-GB.com_peliculas.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_peliculas.sys.ini</language>
+            <language tag="es-ES">es-ES/es-ES.com_peliculas.ini</language>
+            <language tag="es-ES">es-ES/es-ES.com_peliculas.sys.ini</language>
+            <language tag="ca-ES">ca-ES/ca-ES.com_peliculas.ini</language>
+            <language tag="ca-ES">ca-ES/ca-ES.com_peliculas.sys.ini</language>
+        </languages>
+    </administration>
+</extension>

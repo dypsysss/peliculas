@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>mod_peliculas_upcoming</name>
+    <author>Carles Serrats</author>
+    <creationDate>December 2016</creationDate>
+    <copyright>(C) 2005 - 2016 CESI Informatica i comunicacions. All rights reserved.</copyright>
+    <license>Comercial License</license>
+    <authorEmail>carless@cesigrup.com</authorEmail>
+    <authorUrl>www.cesigrup.com</authorUrl>
+    <version>1.0</version>
+    <description>MOD_PELICULAS_UPCOMING_XML_DESCRIPTION</description>
+
+    <files>
+        <filename module="mod_peliculas_upcoming">mod_peliculas_upcoming.php</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_peliculas_upcoming.xml</filename>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_peliculas_upcoming.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_peliculas_upcoming.sys.ini</language>
+        <language tag="es-ES">es-ES/es-ES.mod_peliculas_upcoming.ini</language>
+        <language tag="es-ES">es-ES/es-ES.mod_peliculas_upcoming.sys.ini</language>
+        <language tag="ca-ES">ca-ES/ca-ES.mod_peliculas_upcoming.ini</language>
+        <language tag="ca-ES">ca-ES/ca-ES.mod_peliculas_upcoming.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                        name="count"
+                        type="text"
+                        default="6"
+                        label="MOD_PELICULAS_UPCOMING_FIELD_COUNT_LABEL"
+                        description="MOD_PELICULAS_UPCOMING_FIELD_COUNT_DESC"
+                />
+
+                <field
+                        name="columns"
+                        type="text"
+                        default="1"
+                        label="MOD_PELICULAS_UPCOMING_FIELD_COLUMNS_LABEL"
+                        description="MOD_PELICULAS_UPCOMING_FIELD_COLUMNS_DESC"
+                />
+
+                <field
+                        name="show_num_images"
+                        type="text"
+                        default="1"
+                        label="MOD_PELICULAS_UPCOMING_FIELD_SHOW_NUM_IMAGES_LABEL"
+                        description="MOD_PELICULAS_UPCOMING_FIELD_SHOW_NUM_IMAGES_DESC"
+                />
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                        name="item_heading"
+                        type="list"
+                        default="4"
+                        label="MOD_PELICULAS_UPCOMING_TITLE_HEADING_LABEL"
+                        description="MOD_PELICULAS_UPCOMING_TITLE_HEADING_DESC"
+                >
+                    <option value="1">JH1</option>
+                    <option value="2">JH2</option>
+                    <option value="3">JH3</option>
+                    <option value="4">JH4</option>
+                    <option value="5">JH5</option>
+                </field>
+
+                <field
+                        name="moduleclass_sfx"
+                        type="textarea"
+                        rows="3"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                        name="owncache"
+                        type="list"
+                        default="1"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC"
+                >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                        name="cache_time"
+                        type="text"
+                        default="900"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter" addfieldpath="/administrator/components/com_peliculas/models/fields">
+        <field name="search" type="text" class="js-stools-search-string"
+               label="COM_PELICULAS_ITEMS_SEARCH_FILTER"
+               hint="JSEARCH_FILTER" />
+
+        <field name="cinemaid" type="SelectCinemas"
+               label="COM_PELICULAS_SELECT_CINEMA"
+               description="COM_PELICULAS_SELECT_CINEMA_DESC"
+               onchange="this.form.submit();" />
+    </fields>
+
+    <fields name="list">
+        <field name="fullordering" type="list"
+               label="JGLOBAL_SORT_BY"
+               description="JGLOBAL_SORT_BY"
+               statuses="*,0,1"
+               onchange="this.form.submit();"
+               default="a.name ASC" >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="ordering ASC">JGRID_HEADING_ORDERING_ASC</option>
+            <option value="ordering DESC">JGRID_HEADING_ORDERING_DESC</option>
+            <option value="a.published ASC">JSTATUS_ASC</option>
+            <option value="a.published DESC">JSTATUS_DESC</option>
+            <option value="a.name ASC">COM_PELICULAS_HEADING_TITLE_ASC</option>
+            <option value="a.name DESC">COM_PELICULAS_HEADING_TITLE_DESC</option>
+            <option value="a.id ASC">JGRID_HEADING_ID_ASC</option>
+            <option value="a.id DESC">JGRID_HEADING_ID_DESC</option>
+        </field>
+
+        <field name="limit" type="limitbox" class="inputbox input-mini" default="25"
+               label="COM_PELICULAS_LIST_LIMIT"
+               description="COM_PELICULAS_LIST_LIMIT_DESC"
+               onchange="this.form.submit();" />
+    </fields>
+</form>

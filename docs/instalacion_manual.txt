@@ -1,0 +1,1 @@
+/var/www/mis_componentes/com_peliculas/J3/tools/symlinker/symlinker /var/www/mis_componentes/com_peliculas/J3/peliculas /var/www/mis_componentes/com_peliculas/testJ35

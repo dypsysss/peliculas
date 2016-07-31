@@ -1,4 +1,4 @@
-# peliculas
+# Peliculas
 Componente de Películas para joomla 3.x
 
 # Descripción

@@ -63,4 +63,10 @@
             <language tag="ca-ES">ca-ES/ca-ES.com_peliculas.sys.ini</language>
         </languages>
     </administration>
+
+    <updateservers>
+        <!-- Note: No spaces or linebreaks allowed between the server tags -->
+        <server type="extension" name="Peliculas Update Site">https://raw.githubusercontent.com/dypsysss/peliculas/master/tools/packages/updates.xml</server>
+    </updateservers>
+
 </extension>

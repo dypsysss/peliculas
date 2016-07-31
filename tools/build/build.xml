@@ -25,7 +25,7 @@
         <format property="buildtime" pattern="yyyy.MM.dd"/>
     </tstamp>
 
-    <target name="build" depends="clean, init, build_component, info" />
+    <target name="build" depends="clean, init, build_component, build_modules, info" />
 
     <target name="clean" description="Destroys all generated files and dirs.">
         <delete dir="${cfg.buildVersionDir}" />
@@ -40,6 +40,68 @@
     </target>
 
     <target name="build_component" depends="update_component, pack_component, build_xml_component" />
+
+    <target name="build_modules" depends="build_module_featured, build_module_upcoming" />
+
+    <target name="build_module_featured" depends="update_module_featured" description="packages the finaly module featured file">
+        <zip destfile="${cfg.pakageDir}/${cfg.modNameFeatured}_${cfg.versionDir}.zip" basedir="${cfg.buildVersionDir}/modulefeatured">
+            <exclude name="**/.git/**" />
+            <exclude name="**/.settings/**" />
+            <exclude name=".project" />
+            <exclude name=".buildpath" />
+        </zip>
+
+        <tar destfile="${cfg.pakageDir}/${cfg.modNameFeatured}_${cfg.versionDir}.tar.gz" basedir="${cfg.buildVersionDir}/modulefeatured" compression="gzip">
+            <exclude name="**/.git/**" />
+            <exclude name="**/.settings/**" />
+            <exclude name=".project" />
+            <exclude name=".buildpath" />
+        </tar>
+    </target>
+
+    <target name="update_module_featured" depends="clean" description="copy module featured file">
+        <mkdir dir="${cfg.buildVersionDir}/modulefeatured"/>
+
+        <copy todir="${cfg.buildVersionDir}/modulefeatured" overwrite="true" verbose="${verbose}">
+            <fileset dir="${cfg.siteFilesDir}/modules/${cfg.modNameFeatured}">
+                <exclude name="**/.git/**" />
+                <exclude name="**/.settings/**" />
+                <exclude name="**/.svn/**"/>
+                <exclude name=".project" />
+                <exclude name=".buildpath" />
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="build_module_upcoming" depends="update_module_upcoming" description="packages the finaly module upcoming file">
+        <zip destfile="${cfg.pakageDir}/${cfg.modNameUpcoming}_${cfg.versionDir}.zip" basedir="${cfg.buildVersionDir}/moduleupcoming">
+            <exclude name="**/.git/**" />
+            <exclude name="**/.settings/**" />
+            <exclude name=".project" />
+            <exclude name=".buildpath" />
+        </zip>
+
+        <tar destfile="${cfg.pakageDir}/${cfg.modNameUpcoming}_${cfg.versionDir}.tar.gz" basedir="${cfg.buildVersionDir}/moduleupcoming" compression="gzip">
+            <exclude name="**/.git/**" />
+            <exclude name="**/.settings/**" />
+            <exclude name=".project" />
+            <exclude name=".buildpath" />
+        </tar>
+    </target>
+
+    <target name="update_module_upcoming" depends="clean" description="copy module upcoming file">
+        <mkdir dir="${cfg.buildVersionDir}/moduleupcoming"/>
+
+        <copy todir="${cfg.buildVersionDir}/moduleupcoming" overwrite="true" verbose="${verbose}">
+            <fileset dir="${cfg.siteFilesDir}/modules/${cfg.modNameUpcoming}">
+                <exclude name="**/.git/**" />
+                <exclude name="**/.settings/**" />
+                <exclude name="**/.svn/**"/>
+                <exclude name=".project" />
+                <exclude name=".buildpath" />
+            </fileset>
+        </copy>
+    </target>
 
     <target name="update_component" depends="clean" description="copy component file">
         <mkdir dir="${cfg.buildVersionDir}/component/site"/>
@@ -112,17 +174,17 @@
         <echo message="${line.separator}&lt;updates&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
         <echo message="${line.separator}${tab}&lt;update&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
 
-        <echo message="${line.separator}${tab}${tab}&lt;name&gt;${cfg.name}&lt;/name&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}${tab}&lt;name&gt;${cfg.comName}&lt;/name&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
         <echo message="${line.separator}${tab}${tab}&lt;description&gt;Update Component ${cfg.name} for Joomla&lt;/description&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
         <echo message="${line.separator}${tab}${tab}&lt;version&gt;${cfg.version}&lt;/version&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
         <echo message="${line.separator}${tab}${tab}&lt;element&gt;${cfg.comName}&lt;/element&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}${tab}${tab}&lt;type&gt;package&lt;/type&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}${tab}&lt;type&gt;component&lt;/type&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
         <echo message="${line.separator}${tab}${tab}&lt;client&gt;site&lt;/client&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
 
         <echo message="${line.separator}${tab}${tab}&lt;downloads&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
         <echo message="${line.separator}${tab}${tab}${tab}&lt;downloadurl type=&quot;full&quot; format=&quot;zip&quot;&gt;${ftp.download}/${cfg.comName}_${cfg.versionDir}.zip&lt;/downloadurl&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
         <echo message="${line.separator}${tab}${tab}&lt;/downloads&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}${tab}${tab}&lt;targetplatform name=&quot;joomla&quot; version=&quot;3.1&quot; /&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}${tab}&lt;targetplatform name=&quot;joomla&quot; version=&quot;3.*&quot; /&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
 
         <echo message="${line.separator}${tab}&lt;/update&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
         <echo message="${line.separator}&lt;/updates&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />

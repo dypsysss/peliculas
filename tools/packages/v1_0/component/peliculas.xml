@@ -7,7 +7,7 @@
     <license>Comercial License.</license>
     <authorEmail>carles@serrats.cat</authorEmail>
     <authorUrl>www.serrats.cat</authorUrl>
-    <version>3.2</version>
+    <version>1.0</version>
     <description>COM_PELICULAS_XML_DESCRIPTION</description>
 
     <install> <!-- Runs on install -->

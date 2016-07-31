@@ -9,10 +9,12 @@
     <property name="verbose" value="false"/>
 
     <!-- auto values but should be checked -->
+    <property name="tab" value="&#x0009;" />
     <property name="cfg.comName" value="com_${cfg.name}" />
     <property name="cfg.modNameFeatured" value="mod_${cfg.name}_featured" />
     <property name="cfg.modNameUpcoming" value="mod_${cfg.name}_upcoming" />
     <property name="cfg.buildVersionDir" value="${basedir}/${cfg.releaseDir}/${cfg.versionDir}" />
+    <property name="cfg.pakageDir" value="${basedir}/${cfg.releaseDir}" />
 
     <!-- Original Files -->
     <property name="cfg.adminFilesDir" location="${cfg.buildDir}/administrator" />
@@ -27,6 +29,7 @@
 
     <target name="clean" description="Destroys all generated files and dirs.">
         <delete dir="${cfg.buildVersionDir}" />
+        <delete file="${cfg.pakageDir}/updates.xml" />
     </target>
 
     <target name="init" description="creates nessecary directory to build with">
@@ -105,30 +108,35 @@
     </target>
 
     <target name="build_xml_component" description="builds an xml update">
-        <echo message="&lt;updates&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;update&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;name&gt;${cfg.name}&lt;/name&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;description&gt;Update Component ${cfg.name} for Joomla&lt;/description&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;version&gt;${cfg.version}&lt;/version&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;downloads&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;downloadurl type=&quot;full&quot; format=&quot;tgz&quot;&gt;${ftp.download}/${cfg.comName}_${cfg.versionDir}.zip&lt;/downloadurl&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;/downloads&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;targetplatform name=&quot;joomla&quot; version=&quot;3.1&quot; /&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;element&gt;${cfg.comName}&lt;/element&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;type&gt;component&lt;/type&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;/update&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
-        <echo message="${line.separator}&lt;/updates&gt;" file="${cfg.buildVersionDir}/${cfg.xmlfile}" append="true" />
+        <echo message="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}&lt;updates&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}&lt;update&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+
+        <echo message="${line.separator}${tab}${tab}&lt;name&gt;${cfg.name}&lt;/name&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}${tab}&lt;description&gt;Update Component ${cfg.name} for Joomla&lt;/description&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}${tab}&lt;version&gt;${cfg.version}&lt;/version&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}${tab}&lt;element&gt;${cfg.comName}&lt;/element&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}${tab}&lt;type&gt;package&lt;/type&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}${tab}&lt;client&gt;site&lt;/client&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+
+        <echo message="${line.separator}${tab}${tab}&lt;downloads&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}${tab}${tab}&lt;downloadurl type=&quot;full&quot; format=&quot;zip&quot;&gt;${ftp.download}/${cfg.comName}_${cfg.versionDir}.zip&lt;/downloadurl&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}${tab}&lt;/downloads&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}${tab}${tab}&lt;targetplatform name=&quot;joomla&quot; version=&quot;3.1&quot; /&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+
+        <echo message="${line.separator}${tab}&lt;/update&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
+        <echo message="${line.separator}&lt;/updates&gt;" file="${cfg.pakageDir}/${cfg.xmlfile}" append="true" />
     </target>
 
     <target name="pack_component" description="packages the finaly component file">
-        <zip destfile="${cfg.buildVersionDir}/${cfg.comName}_${cfg.versionDir}.zip" basedir="${cfg.buildVersionDir}/component">
+        <zip destfile="${cfg.pakageDir}/${cfg.comName}_${cfg.versionDir}.zip" basedir="${cfg.buildVersionDir}/component">
             <exclude name="**/.git/**" />
             <exclude name="**/.settings/**" />
             <exclude name=".project" />
             <exclude name=".buildpath" />
         </zip>
 
-        <tar destfile="${cfg.buildVersionDir}/${cfg.comName}_${cfg.versionDir}.tar.gz" basedir="${cfg.buildVersionDir}/component" compression="gzip">
+        <tar destfile="${cfg.pakageDir}/${cfg.comName}_${cfg.versionDir}.tar.gz" basedir="${cfg.buildVersionDir}/component" compression="gzip">
             <exclude name="**/.git/**" />
             <exclude name="**/.settings/**" />
             <exclude name=".project" />

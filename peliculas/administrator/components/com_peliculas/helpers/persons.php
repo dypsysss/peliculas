@@ -13,7 +13,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport('joomla.filesystem.folder');
 jimport('joomla.filesystem.file');
 
-JLoader::register('PeliculasFile', JPATH_COMPONENT_ADMINISTRATOR . '/libs/file.php');
+require_once JPATH_COMPONENT_ADMINISTRATOR . '/libs/file.php';
 
 /**
  * Peliculas component helper.
@@ -23,7 +23,7 @@ JLoader::register('PeliculasFile', JPATH_COMPONENT_ADMINISTRATOR . '/libs/file.p
  */
 class PersonsHelper
 {
-    protected static $_items = array();
+    static $_items = array();
 
     public static function getPersonByTmdbID($Id) {
         $item       = null;
@@ -89,7 +89,8 @@ class PersonsHelper
         }
 
         $data = array();
-        if (!empty($iPerson->get("profile_path"))) {
+        $profile_path = $iPerson->get("profile_path");
+        if (!empty($profile_path)) {
             $data['poster_path'] = $tmdb->getImageURL("original");
             $data['poster_image'] = $iPerson->get("profile_path");
             if (substr($data['poster_image'],0,1) == "/" ) {

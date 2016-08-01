@@ -11,6 +11,7 @@
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
 JLoader::register('TMDB', JPATH_COMPONENT_ADMINISTRATOR . '/libs/tmdb-api.php');
+
 /**
  * Gender list controller class.
  *
@@ -40,18 +41,7 @@ class PeliculasControllerPerson extends JControllerForm
         $this->registerTask('applytmdb', 'save');
     }
 
-    /**
-     * Method to save a record.
-     *
-     * @param   string  $key     The name of the primary key of the URL variable.
-     * @param   string  $urlVar  The name of the URL variable if different from the primary key (sometimes required to avoid router collisions).
-     *
-     * @return  boolean  True if successful, false otherwise.
-     *
-     * @since   12.2
-     */
-    public function save($key = null, $urlVar = null)
-    {
+    public function save($key = null, $urlVar = null) {
         // Check for request forgeries.
         JSession::checkToken() or jexit(JText::_('JINVALID_TOKEN'));
 
@@ -73,7 +63,8 @@ class PeliculasControllerPerson extends JControllerForm
             $data['homepage']       = $iPerson->get("homepage");
             $data['place_of_birth'] = $iPerson->get("place_of_birth");
 
-            if (!empty($iPerson->get("profile_path"))) {
+            $profile_path = $iPerson->get("profile_path");
+            if (!empty($profile_path)) {
                 $data['poster_path'] = $this->getTMDB()->getImageURL("original");
                 $data['poster_image'] = $iPerson->get("profile_path");
                 if (substr($data['poster_image'], 0, 1) == "/") {
@@ -90,6 +81,7 @@ class PeliculasControllerPerson extends JControllerForm
         return parent::save($key,$urlVar);
     }
 
+
     public function getTMDB() {
 
         if ($this->_TMDB == null) {
@@ -101,4 +93,5 @@ class PeliculasControllerPerson extends JControllerForm
 
         return $this->_TMDB;
     }
+
 }

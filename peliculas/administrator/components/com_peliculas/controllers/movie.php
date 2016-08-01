@@ -129,7 +129,8 @@ class PeliculasControllerMovie extends JControllerForm
             }
 
             $festreno = null;
-            if (!empty($tmdbMovie->get("release_date"))) {
+            $tmp1 = $tmdbMovie->get("release_date");
+            if (!empty($tmp1)) {
                 $ymd = DateTime::createFromFormat('Y-m-d', $tmdbMovie->get("release_date"))->format('Y-m-d');
                 $festreno = new JDate($ymd);
                 $data['f_estreno'] = $festreno->format('d-m-Y');
@@ -192,7 +193,8 @@ class PeliculasControllerMovie extends JControllerForm
             $data['directores']     = $tmpDirectores;
             $data['guion']          = $tmpGuionistas;
 
-            if (!empty($tmdbMovie->get("poster_path"))) {
+            $poster_path = $tmdbMovie->get("poster_path");
+            if (!empty($poster_path)) {
                 $data['poster_path']    = $this->getTMDB()->getImageURL("original");
                 $data['poster_image']   = $tmdbMovie->get("poster_path");
 

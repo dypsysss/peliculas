@@ -1,19 +1,335 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a31f9bb-11b6-47ac-bade-caa981d9f1cb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/com_peliculas_v1_0.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/com_peliculas_v1_0.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/updates.xml" afterPath="" />
+    <list default="true" id="43e226e3-e5de-42cd-9a68-8b408af85d4e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/com_peliculas_v1_0.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/com_peliculas_v1_0.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/access.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/_base.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/cinema.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/cinemas.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/cinemasrooms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/companies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/company.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/dashboard.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/event.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/events.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/featured.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/gender.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/genders.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/movie.json.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/movie.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/movies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/person.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/persons.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/tmdbcompanies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/tmdbmovies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/controllers/tmdbpersons.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/helpers/cinemas.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/helpers/company.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/helpers/events.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/helpers/gender.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/helpers/helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/helpers/html/featured.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/helpers/html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/helpers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/helpers/movie.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/helpers/persons.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/helpers/urlmodal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/language/en-GB/en-GB.com_peliculas.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/language/en-GB/en-GB.com_peliculas.sys.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/language/es-ES/es-ES.com_peliculas.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/language/es-ES/es-ES.com_peliculas.sys.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/data/Collection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/data/Company.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/data/Episode.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/data/Genre.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/data/Movie.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/data/Person.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/data/Role.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/data/Season.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/data/TVShow.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/data/roles/MovieRole.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/data/roles/TVShowRole.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/libs/tmdb-api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/_baseform.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/_baselist.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/cinema.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/cinemas.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/cinemasrooms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/companies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/company.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/event.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/events.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/feature.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/featured.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/gallery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/modalcinemas.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/modalmovies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/selectcinemas.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/selectcompanies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/selectgenders.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/selectpersons.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/selecttmdbcompany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/selecttmdbmovie.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/selecttmdbperson.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/fields/videos.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/cinema.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/company.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/event.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/filter_cinemas.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/filter_cinemasrooms.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/filter_companies.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/filter_events.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/filter_featured.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/filter_genders.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/filter_movies.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/filter_persons.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/filter_tmdbcompanies.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/filter_tmdbmovies.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/filter_tmdbpersons.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/gender.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/movie.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/forms/person.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/gender.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/genders.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/movie.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/movies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/person.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/persons.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/tmdbcompanies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/tmdbmovies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/models/tmdbpersons.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/peliculas.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/peliculas.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/sql/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/sql/install.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/sql/updates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/tables/_base.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/tables/cinemas.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/tables/cinemasroom.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/tables/companies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/tables/events.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/tables/eventsroom.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/tables/featured.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/tables/genders.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/tables/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/tables/movies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/tables/persons.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/_base.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinema/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinema/tmpl/edit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinema/tmpl/edit_rooms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinema/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinema/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinemas/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinemas/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinemas/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinemas/tmpl/modal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinemas/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinemasrooms/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinemasrooms/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinemasrooms/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinemasrooms/tmpl/modal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/cinemasrooms/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/companies/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/companies/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/companies/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/companies/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/company/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/company/tmpl/edit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/company/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/company/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/dashboard/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/dashboard/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/dashboard/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/dashboard/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/event/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/event/tmpl/edit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/event/tmpl/edit_rooms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/event/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/event/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/events/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/events/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/events/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/events/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/featured/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/featured/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/featured/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/featured/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/gender/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/gender/tmpl/edit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/gender/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/gender/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/genders/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/genders/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/genders/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/genders/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/movie/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/movie/tmpl/edit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/movie/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/movie/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/movies/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/movies/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/movies/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/movies/tmpl/modal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/movies/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/person/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/person/tmpl/edit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/person/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/person/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/persons/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/persons/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/persons/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/persons/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbcompanies/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbcompanies/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbcompanies/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbcompanies/tmpl/modal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbcompanies/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbmovies/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbmovies/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbmovies/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbmovies/tmpl/modal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbmovies/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbpersons/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbpersons/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbpersons/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbpersons/tmpl/modal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/views/tmdbpersons/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/language/en-GB/en-GB.com_peliculas.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/language/en-GB/en-GB.com_peliculas.sys.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/language/es-ES/es-ES.com_peliculas.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/language/es-ES/es-ES.com_peliculas.sys.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/install.script.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/css/admin.peliculas.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/css/copia_site.peliculas.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/css/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/css/jquery.lightbox-0.5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/css/jquery.lightbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/css/site.peliculas.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/css/site.peliculas.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/carousel/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/carousel/next.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/carousel/prev.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icon-48-cinema.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icon-48-companies.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icon-48-events.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icon-48-films.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icon-48-masks.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icon-48-persons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icon-person.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/16/icon-default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/16/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/16/media_trash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/16/sort_asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/16/sort_desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/close.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/next.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/prev.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/icons/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/images/peliculas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/bootstrap.file-input.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/crop-avatar/css/crop-avatar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/crop-avatar/css/joomCropper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/crop-avatar/dist/cropper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/crop-avatar/dist/cropper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/crop-avatar/dist/cropper.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/crop-avatar/dist/cropper.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/crop-avatar/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/crop-avatar/js/crop-avatar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/crop-avatar/js/joomCropper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/jquery.lightbox-0.5.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/jquery.lightbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/peliculas.admin.events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/peliculas.admin.rooms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/media/com_peliculas/js/site.peliculas.all.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/peliculas.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/controllers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/controllers/movie.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/controllers/movies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/helpers/events.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/helpers/html/companies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/helpers/html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/helpers/html/persons.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/helpers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/helpers/peliculashelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/helpers/route.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/language/es-ES/es-ES.com_peliculas.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/language/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/layouts/events/cinema.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/layouts/events/item.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/layouts/events/movie.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/layouts/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/layouts/movies/grid_item.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/models/events.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/models/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/models/movie.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/models/movies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/peliculas.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/router.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/_base.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/events/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/events/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/events/tmpl/default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/events/tmpl/default_items.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/events/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/events/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movie/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movie/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movie/tmpl/default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movie/tmpl/default_events.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movie/tmpl/default_images.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movie/tmpl/default_videos.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movie/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movie/view.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movies/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movies/tmpl/default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movies/tmpl/default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movies/tmpl/default_items.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movies/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/site/views/movies/view.html.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/J3.iml" afterPath="$PROJECT_DIR$/.idea/J3.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/config.xml" afterPath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/controllers/company.php" afterPath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/controllers/company.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/controllers/movie.php" afterPath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/controllers/movie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/controllers/person.php" afterPath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/controllers/person.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/helpers/company.php" afterPath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/helpers/company.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/helpers/persons.php" afterPath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/helpers/persons.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/models/forms/person.xml" afterPath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/models/forms/person.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/models/person.php" afterPath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/models/person.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/peliculas.php" afterPath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/peliculas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/peliculas.xml" afterPath="$PROJECT_DIR$/peliculas/administrator/components/com_peliculas/peliculas.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/site/components/com_peliculas/language/ca-ES/ca-ES.com_peliculas.ini" afterPath="$PROJECT_DIR$/peliculas/site/components/com_peliculas/language/ca-ES/ca-ES.com_peliculas.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peliculas/site/components/com_peliculas/language/es-ES/es-ES.com_peliculas.ini" afterPath="$PROJECT_DIR$/peliculas/site/components/com_peliculas/language/es-ES/es-ES.com_peliculas.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/build/build.properties" afterPath="$PROJECT_DIR$/tools/build/build.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/build/build.xml" afterPath="$PROJECT_DIR$/tools/build/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/peliculas.xml" afterPath="$PROJECT_DIR$/tools/packages/v1_0/component/administrator/components/com_peliculas/peliculas.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/packages/v1_0/component/peliculas.xml" afterPath="$PROJECT_DIR$/tools/packages/v1_0/component/peliculas.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/packages/updates.xml" afterPath="$PROJECT_DIR$/tools/packages/updates.xml" />
     </list>
     <ignored path="J3.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,42 +344,8 @@
   <component name="FavoritesManager">
     <favorites_list name="J3" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="build.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tools/build/build.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/build/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="122" column="112" selection-start-line="122" selection-start-column="112" selection-end-line="122" selection-end-column="112" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="FORCE_PUSH_ALLOWED" value="true" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/tools/build/build.xml" />
-        <option value="$PROJECT_DIR$/tools/build/build.properties" />
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -71,36 +353,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpServers">
-    <servers />
-  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="49" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1317" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Less</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Less</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -125,6 +385,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -143,86 +404,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v1_0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -246,12 +434,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -278,49 +460,42 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8a31f9bb-11b6-47ac-bade-caa981d9f1cb" name="Default" comment="" />
-      <created>1469965079054</created>
+      <changelist id="43e226e3-e5de-42cd-9a68-8b408af85d4e" name="Default" comment="" />
+      <created>1470045147606</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1469965079054</updated>
-      <workItem from="1469965085414" duration="551000" />
-      <workItem from="1469966065283" duration="2300000" />
+      <updated>1470045147606</updated>
+      <workItem from="1470045151189" duration="39000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2851000" />
+    <option name="totallyTimeSpent" value="39000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="24" width="1317" height="744" extended-state="6" />
+    <frame x="49" y="-4" width="1317" height="772" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25334382" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940991" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.properties" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -336,23 +511,5 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tools/build/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="122" column="112" selection-start-line="122" selection-start-column="112" selection-end-line="122" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/build/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

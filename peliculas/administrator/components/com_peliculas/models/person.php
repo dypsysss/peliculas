@@ -11,7 +11,7 @@
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
 JLoader::register('PeliculasModelBaseForm', JPATH_COMPONENT_ADMINISTRATOR . '/models/_baseform.php');
-JLoader::register('PersonsHelper', JPATH_COMPONENT_ADMINISTRATOR . '/helpers/persons.php');
+require_once JPATH_COMPONENT_ADMINISTRATOR . '/helpers/persons.php';
 
 /**
  * Methods supporting a edit elements.
@@ -112,11 +112,12 @@ class PeliculasModelPerson extends PeliculasModelBaseForm
             $data['published'] = 0;
         }
 
-        if (parent::save($data)) {
-            return $this->processImage($data);
+        $lreturn = parent::save($data);
+        if ($lreturn) {
+            $lreturn = $this->processImage($data);
         }
 
-        return false;
+        return $lreturn;
     }
 
     /**
@@ -125,8 +126,17 @@ class PeliculasModelPerson extends PeliculasModelBaseForm
      */
     public function processImage($data)
     {
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
+
         $item = $this->getItem();
-        return PersonsHelper::processImage($item, $data);
+        try {
+            PersonsHelper::processImage($item, $data);
+        } catch (Exception $ex) {
+            echo "error :" . $ex->getMessage();
+            return false;
+        }
+        return true;
     }
 
     /**

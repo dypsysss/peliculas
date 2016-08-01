@@ -64,7 +64,8 @@ class CompanyHelper
 
                 $data = array();
 
-                if (!empty($iCompany->get("logo_path"))) {
+                $logo_path = $iCompany->get("logo_path");
+                if (!empty($logo_path)) {
                     $data['poster_path'] = $tmdb->getImageURL("original");
                     $data['poster_image'] = $iCompany->get("logo_path");
                     if (substr($data['poster_image'], 0, 1) == "/") {

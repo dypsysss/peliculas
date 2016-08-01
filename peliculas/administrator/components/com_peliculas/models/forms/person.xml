@@ -26,6 +26,7 @@
 
         <field name="level" type="hidden" filter="unset"/>
         <field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL" description="JFIELD_ACCESS_DESC"/>
+
         <field name="themoviedb_id" type="selecttmdbperson"
                label="COM_PELICULAS_FIELD_PERSON_THEMOVIEWDBID_LABEL"
                description="COM_PELICULAS_FIELD_PERSON_THEMOVIEWDBID_DESC"/>
@@ -34,7 +35,7 @@
         <field name="poster_image" type="hidden" />
     </fieldset>
 
-    <fieldset name="details" label="COM_PELICULAS_PERSON_DETAILS">
+    <fieldset name="details" label="COM_PELICULAS_PERSON_DETAILS" addfieldpath="/administrator/components/com_peliculas/models/fields" >
         <field name="image"
                type="image"
                label="COM_PELICULAS_FIELD_PARAMS_IMAGE_LABEL"

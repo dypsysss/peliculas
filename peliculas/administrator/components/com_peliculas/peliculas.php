@@ -23,16 +23,19 @@ if (!JFactory::getUser()->authorise('core.manage', 'com_peliculas')) {
 // Include dependancies
 jimport('joomla.application.component.controller');
 
-JTable::addIncludePath(               JPATH_COMPONENT.'/tables');
+JTable::addIncludePath( JPATH_COMPONENT_ADMINISTRATOR . '/tables');
 
 $input      = JFactory::getApplication()->input;
 $ajax       = $input->getBool('no_html', false);
 $adminlang 	= JFactory::getLanguage();
 
+/*
 if ($input->getCmd('task') == '') {
     $input->set('task', 'dashboard.display');
 }
+*/
 
-$controller	= JControllerLegacy::getInstance('Peliculas');
+$controller	= JControllerLegacy::getInstance('peliculas');
 $controller->execute($input->getCmd('task'));
 $controller->redirect();
+

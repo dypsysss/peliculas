@@ -70,7 +70,8 @@ class PeliculasControllerCompany extends JControllerForm
             $data['headquarters']   = $iCompany->get("headquarters");
             $data['homepage']       = $iCompany->get("homepage");
 
-            if (!empty($iCompany->get("logo_path"))) {
+            $logo_path = $iCompany->get("logo_path");
+            if (!empty($logo_path)) {
                 $data['poster_path'] = $this->getTMDB()->getImageURL("original");
                 $data['poster_image'] = $iCompany->get("logo_path");
                 if (substr($data['poster_image'], 0, 1) == "/") {
